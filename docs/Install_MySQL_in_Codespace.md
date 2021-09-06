@@ -1,4 +1,5 @@
 ## codespace에 설치 (Ubuntu, Azure)
+Ubuntu 20.04.3 LTS
 
 ### 1. mysql-server 설치
 
