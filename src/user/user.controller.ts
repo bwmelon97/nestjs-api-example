@@ -1,13 +1,15 @@
 import { Body, Controller, Get, HttpStatus, Post, Res } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { Response } from 'express';
 import { CreateUserInput } from './dtos/create-user.dto';
-import { UsersService } from './users.service';
+import { UserService } from './user.service';
 
 @Controller('users')
-export class UsersController {
+@ApiTags('')
+export class UserController {
 
     constructor(
-        private readonly service: UsersService
+        private readonly service: UserService
     ) {}
 
     @Get('all')

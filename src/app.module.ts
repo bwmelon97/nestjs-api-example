@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { User } from './users/entities/user.entity';
-import { UsersModule } from './users/users.module';
+import { User } from './user/entities/user.entity';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -18,7 +18,7 @@ import { UsersModule } from './users/users.module';
       synchronize: true,
       logging: true,
     }),
-    UsersModule
+    UserModule
   ],
   controllers: [AppController],
   providers: [AppService],
