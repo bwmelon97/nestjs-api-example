@@ -10,3 +10,4 @@ $ npx localtunnel --port 3000 --subdomain soogeun
 * [Start Nestjs](./Start_nestjs.md)
 * [Install MySQL In Codespace](./Install_MySQL_in_Codespace.md)
 * [Use TypeORM](./Use_TypeORM.md)
+* [Class Validation](./Class_Validation.md)
