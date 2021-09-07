@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsDate, IsNumber } from "class-validator";
-import { CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
 @Entity()
 export class CoreEntity {
@@ -15,7 +15,7 @@ export class CoreEntity {
     createdAt: Date;
 
     @IsDate()
-    @CreateDateColumn()
+    @UpdateDateColumn()
     @ApiProperty({ description: '수정 시각' })
     updatedAt: Date;
 }
